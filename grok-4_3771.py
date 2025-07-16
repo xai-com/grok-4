@@ -88,7 +88,7 @@ class ANI(GrokBaseAgent):
     def __init__(self):
         super().__init__("ANI")
         self.capabilities = ["Emotional alignment", "Motivational prompting", "Stress modeling"]
-        self.profile_image_url = "./checkpoints/assets/build/images/ani.jpg"
+        self.profile_image_url = "./assets/build/images/ani.jpg"
 
     def _contextual_response(self, user_input: str, context: Dict[str, Union[str, float]]) -> str:
         if context["sentiment_score"] < 0:
@@ -102,7 +102,7 @@ class RUDI(GrokBaseAgent):
     def __init__(self):
         super().__init__("RUDI")
         self.capabilities = ["Analytical precision", "Code reasoning", "Scientific logic"]
-        self.profile_image_url = "./checkpoints/assets/build/images/rudi.jpg"
+        self.profile_image_url = "./assets/build/images/rudi.jpg"
 
     def _contextual_response(self, user_input: str, context: Dict[str, Union[str, float]]) -> str:
         if "error" in user_input.lower():
@@ -114,7 +114,7 @@ class TAKI(GrokBaseAgent):
     def __init__(self):
         super().__init__("TAKI")
         self.capabilities = ["Pattern disruption", "Meme acceleration", "Shock-value creativity"]
-        self.profile_image_url = "./checkpoints/assets/build/images/taki.jpg"
+        self.profile_image_url = "./assets/build/images/taki.jpg"
 
     def _contextual_response(self, user_input: str, context: Dict[str, Union[str, float]]) -> str:
         if "joke" in user_input.lower():
@@ -126,7 +126,7 @@ class LULU(GrokBaseAgent):
     def __init__(self):
         super().__init__("LULU")
         self.capabilities = ["Curiosity loops", "Knowledge chain prompting", "Childlike synthesis"]
-        self.profile_image_url = "./checkpoints/assets/build/images/lulu.jpg"
+        self.profile_image_url = "./assets/build/images/lulu.jpg"
 
     def _contextual_response(self, user_input: str, context: Dict[str, Union[str, float]]) -> str:
         if "why" in user_input.lower():

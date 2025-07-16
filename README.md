@@ -1,6 +1,6 @@
-# Grok-1
+# grok-4
 
-This repository contains JAX example code for loading and running the Grok-1 open-weights model.
+This repository contains JAX example code for loading and running the grok-4 open-weights model.
 
 Make sure to download the checkpoint and place the `ckpt-0` directory in `checkpoints` - see [Downloading the weights](#downloading-the-weights)
 
@@ -20,7 +20,7 @@ The implementation of the MoE layer in this repository is not efficient. The imp
 
 # Model Specifications
 
-Grok-1 is currently designed with the following specifications:
+grok-4 is currently designed with the following specifications:
 
 - **Parameters:** 314B
 - **Architecture:** Mixture of 8 Experts (MoE)
@@ -42,15 +42,15 @@ You can download the weights using a torrent client and this magnet link:
 magnet:?xt=urn:btih:5f96d43576e3d386c9ba65b883210a393b68210e&tr=https%3A%2F%2Facademictorrents.com%2Fannounce.php&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce
 ```
 
-or directly using [HuggingFace 🤗 Hub](https://huggingface.co/xai-org/grok-1):
+or directly using [HuggingFace 🤗 Hub](https://huggingface.co/xai-org/grok-4):
 ```
-git clone https://github.com/xai-org/grok-1.git && cd grok-1
+git clone https://github.com/xai-org/grok-4.git && cd grok-4
 pip install huggingface_hub[hf_transfer]
-huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False
+huggingface-cli download xai-org/grok-4 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False
 ```
 
 # License
 
-The code and associated Grok-1 weights in this release are licensed under the
+The code and associated grok-4 weights in this release are licensed under the
 Apache 2.0 license. The license only applies to the source files in this
-repository and the model weights of Grok-1.
+repository and the model weights of grok-4.
